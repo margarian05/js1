@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+		var age = prompt("enter yoyr age");
+
+		function days(year){
+			
+			let a = 0;
+			for(let i=2021-year; i<2021; i++){
+				if(i%4==0){
+					a++;
+				}
+			}
+
+			year = year*365;
+			year = year+a;
+			return year;
+		}
+
+		function weeks(year){
+			let weeks = year*52;
+			return weeks;
+		}
+
+		function months(year){
+			let months = year*12;
+			return months;
+		}
+
+       alert("You have been living for "+days(age)+" days or "+ months(age)+" months or "+weeks(age)+" weeks");
+
+	</script>
+</body>
+</html>

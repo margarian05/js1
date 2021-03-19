@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+        var name = prompt("Please enter your name");
+		name = name.toLowerCase();
+		var first = name.charAt(0).toUpperCase();
+		var length = name.length;
+		alert("Hi " + first+name.slice(length-(length-1), length));
+	</script>
+</body>
+</html>
